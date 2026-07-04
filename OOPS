@@ -1,1 +1,44 @@
 OOPS in java..
+Starting with learning how to call a method...
+import java.util.*;
+class ChaiShop{
+    String branchName;
+    int cupsSold;
+    int price;
+    //constructor
+    public ChaiShop(String branchName,int cupsSold,int price){
+        // System.out.println("Constructor here");
+        // System.out.println(bn+" "+cs+" "+p);
+        this.branchName=branchName;
+        this.cupsSold=cupsSold;
+        this.price=price;
+    }
+    // public void annaChai(int n){
+    //     cupsSold+=n;
+    // }
+    // public void biscuit(){
+    //     price+=10;
+    // }
+    // public void revenue(){
+    //     System.out.println("revenue"+" "+(cupsSold*price));
+    // }
+    public void display(){
+        System.out.println(branchName);
+        System.out.println(cupsSold);
+        System.out.println(price);
+        // revenue();
+    }
+    
+}
+class Main {
+    public static void main(String[] args) {
+        ChaiShop branch1=new ChaiShop("Adda", 0,7);
+        // branch1.annaChai(9);
+        // branch1.biscuit();
+        branch1.display();
+        // branch1.revenue();
+        // ChaiShop branch2=new ChaiShop("Boom",5,34);
+        // branch2.display();
+        // branch2.revenue();
+    }
+}
