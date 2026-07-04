@@ -42,3 +42,20 @@ class Main {
         // branch2.revenue();
     }
 }
+Method overloading...
+import java.util.*;
+class Vignesh{
+    public void add(int n,int m){
+        System.out.println(n+m);
+    }
+    public void add(int n,int m,int l){
+        System.out.println(n+m+l);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Vignesh nasa=new Vignesh();
+        nasa.add(4,5);
+        nasa.add(8,9,7);
+    }
+}
