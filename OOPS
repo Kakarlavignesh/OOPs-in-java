@@ -59,3 +59,22 @@ class Main {
         nasa.add(8,9,7);
     }
 }
+Method overriding..
+import java.util.*;
+class Student{
+    public void add(int m,int n){
+        System.out.print(n+m);
+    }
+}
+class vignesh extends Student{
+    @Override
+    public void add(int m,int n){
+    System.out.print(n+m);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Student s=new Student();
+        s.add(9,8);
+    }
+}
