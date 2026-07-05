@@ -95,3 +95,34 @@ class Main {
         System.out.println(isPrime(42));
     }
 }
+
+Multiple inheritance...
+
+import java.util.*;
+interface Animal{
+    public void Dog();
+}
+interface Birds{
+    public void Fly();
+}
+class Humans implements Animal,Birds{
+    @Override
+    public void Dog(){
+        System.out.println("Dog barks");
+    }
+    @Override
+    public void Fly(){
+        System.out.println("Birds Fly");
+    }
+    public void Runs(){
+        System.out.println("Human walks");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Humans h=new Humans();
+        h.Dog();
+        h.Fly();
+        h.Runs();
+    }
+}
