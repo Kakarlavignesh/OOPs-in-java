@@ -126,3 +126,23 @@ class Main {
         h.Runs();
     }
 }
+
+Constructors//
+
+class Parent{
+    Parent(){
+        System.out.println("Parent");
+    }
+}
+class Child extends Parent{
+    Child(){
+        //super();
+        System.out.println("Child");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Child ch=new Child();
+        
+    }
+}
