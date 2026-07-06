@@ -174,3 +174,21 @@ class Main {
         System.out.println(a.getAge());
     }
 }
+Abstraction in java..//
+
+import java.util.*;
+abstract class Animal{
+    abstract void draw();
+}
+class Birds extends Animal{
+    @Override
+    void draw(){
+        System.out.println("Vignesh");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Birds a=new Birds();
+        a.draw();
+    }
+}
