@@ -254,3 +254,31 @@ class Humans extends Birds{
         System.out.println("Human walks");
     }
 }
+Multilevel Inheritance..
+
+import java.util.*;
+interface Animal{
+    public void Dog();
+}
+interface Birds{
+    public void Bird();
+}
+class Humans implements Birds,Animal{
+    public void Dog(){
+        System.out.println("Dog barks");
+    }
+    public void Bird(){
+        System.out.println("Birds Flies");
+    }
+    public void man(){
+        System.out.println("Man walks");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Humans h=new Humans();
+        h.Dog();
+        h.Bird();
+        h.man();
+    }
+}
