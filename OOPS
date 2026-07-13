@@ -234,3 +234,23 @@ class Humans extends Animal {
         System.out.println("Human walks");
     }
 }
+
+multilevel inheritance..
+
+class Animal{
+    public void eat(){
+        System.out.println("Animal eats");
+    }
+}
+
+class Birds extends Animal{
+    public void fly(){
+        System.out.println("Bird flies");
+    }
+}
+
+class Humans extends Birds{
+    public void walk(){
+        System.out.println("Human walks");
+    }
+}
