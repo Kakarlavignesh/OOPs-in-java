@@ -364,7 +364,24 @@ class Main {
     }
 }
 
+Using this keyword..
 
+import java.util.*;
+class Student{
+    Student(){
+        System.out.println("Default");
+    }
+    Student(String name){
+        this();
+        System.out.println(name);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Student s=new Student("Vignesh");
+        // s.name="vignesh";
+    }
+}
 
 
 
