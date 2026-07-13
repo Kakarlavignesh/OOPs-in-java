@@ -194,3 +194,23 @@ class Main {
 }
 
 oop concepts mastering ...//
+single inheritance....
+import java.util.*;
+class Animal{
+    public void Dog(){
+        System.out.println("Dog barks");
+    }
+}
+class Birds extends Animal{
+    public void Bird(){
+        System.out.println("Bird flies");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        // Birds b=new Birds();
+        Birds a=new Birds();
+        a.Dog();
+        a.Bird();
+    }
+}
