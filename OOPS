@@ -304,3 +304,45 @@ class Main {
         // a.eat("vignesh");
     }
 }
+
+Method overloading..
+
+public void eat() {
+    System.out.println("Dog eats");
+}
+
+public void eat(String food) {
+    System.out.println("Dog eats " + food);
+}
+
+public void eat(String food, int times) {
+    System.out.println("Dog eats " + food + " " + times + " times");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
