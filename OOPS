@@ -214,3 +214,23 @@ class Main {
         a.Bird();
     }
 }
+
+Hierarchial Inheritnce..
+
+class Animal {
+    public void eat() {
+        System.out.println("Animal eats");
+    }
+}
+
+class Birds extends Animal {
+    public void fly() {
+        System.out.println("Bird flies");
+    }
+}
+
+class Humans extends Animal {
+    public void walk() {
+        System.out.println("Human walks");
+    }
+}
