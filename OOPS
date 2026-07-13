@@ -318,8 +318,28 @@ public void eat(String food) {
 public void eat(String food, int times) {
     System.out.println("Dog eats " + food + " " + times + " times");
 }
+abstraction...
 
-
+import java.util.*;
+abstract class Animal{
+    public void sleep(){
+        System.out.println("I am Sleeping");
+    }
+    abstract void eat();
+}
+class Bird extends Animal{
+    @Override
+    void eat(){
+        System.out.println("Dog eats 3 times a day");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Bird b=new Bird();
+        b.eat();
+        b.sleep();
+    }
+}
 
 
 
