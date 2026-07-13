@@ -282,3 +282,25 @@ class Main {
         h.man();
     }
 }
+Polymorphism... Method over riding..
+
+import java.util.*;
+class Animal{
+    public void eat(String s){
+        System.out.println("Dog eats");
+    }
+}
+class Birds extends Animal{
+    @Override
+    public void eat(String s){
+        System.out.println("Dog runs");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Animal a=new Birds();
+        
+        a.eat("vignesh");
+        // a.eat("vignesh");
+    }
+}
